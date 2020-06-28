@@ -1,0 +1,39 @@
+Problema 1:
+a = input('Type something:')
+b = [] 
+if len(a)%2==0:
+    for i in range(0,len(a)-1,2):
+        b.append(a[i]+a[i+1])
+else:
+    a +='_'
+    for i in range(0,len(a)-1,2):
+        b.append(a[i]+a[i+1])
+print(b)
+
+Problema 2:
+def reverse_function(a):
+    words=a.split(" ")
+    reverse_words=' '.join(reversed(words))
+    return reverse_words
+abc = "This is an example!"
+print (reverse_function(abc)) 
+
+Problema 3:
+class Human:
+	def __init__(self,name):
+		self.name=name
+class Man(Human):
+    gender='man'
+    def __init__(self,name):
+        self.name=name
+class Woman(Human):
+    gender='woman'
+    def __init__(self,name):
+        self.name=name
+
+def creation(a,b):
+    Names=[a,b]
+    print (Names)
+a=Man('Adam')
+b=Woman('Eva')
+creation(a.name,b.name)
